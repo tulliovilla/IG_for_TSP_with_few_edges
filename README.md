@@ -83,3 +83,7 @@ They are listed in the ```requirements.txt``` file and may be installed running 
 ```bash
 pip install -r requirements.txt
 ```
+
+Notice that, since the scripts use ```gurobypy``` to solve the linear programs, a Gurobi license is needed:
+consult the [Gurobi website](https://www.gurobi.com/solutions/licensing/) for more information on how to obtain one.\
+We used a Gurobi license for academic purposes, version 11.0.0.

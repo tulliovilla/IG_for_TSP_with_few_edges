@@ -62,26 +62,3 @@ def solve_optII(n: int, x: Vertex,
     time = m.Runtime
 
     return optII, opt_variables, c_star, time
-
-
-# def compute_gapII(n: int, x: Vertex,
-#                   starting_walks=None,
-#                   tol=1e-5
-#                   ) -> tuple[float, list[tuple[Walk, float]], Cost, float]:
-#     """
-#     Returns the IGII of a given vertex x
-#     in the SEP polytope with n nodes.
-#     :param n: number of nodes;
-#     :param x: (fractional) vertex of the SEP polytope;
-#     :param starting_walks: list of walks used to start the optimization;
-#     :param tol: tolerance used in the computation;
-#     :return gapII: the IGII;
-#     :return opt_variables: an assignment of optimal variables,
-#         given as a list of tuples (walk, value);
-#     :return c_star: a cost that realizes the IGII;
-#     :return time: the runtime of gurobi;
-#     """
-#     inverse_gapII, opt_variables, c_star, time = solve_optII(n, x, starting_walks, tol)
-#     gapII = 1 / inverse_gapII
-#
-#     return gapII, opt_variables, c_star, time
